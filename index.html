@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Count character</h1>
+    <pre>
+        const countCharacters = (S) => 
+        {
+            let countA=0;
+            let countB=0;
+   for(let i=0;i < S.length;i++){
+              if(S[i]==="A"){
+                countA++;
+              }
+            }
+            for(let j=0;j < S.length;j++){
+              if(S[j]==="D"){
+                countB++;
+              }
+            }
+            let result=[countA,countB];
+            return result;
+        };
+   
+        </pre>
+    <h1>Count the head</h1>
+    <pre>
+       
+var Count_Occ = (s) => 
+{
+let n=s.length;
+let str=s.split("").sort().join("");
+let ans="";
+for(let i=0;i < n;i++){
+  let count=0;
+  for(let j=0;j < n;j++){
+    if(str[i]===str[j] && i>j){
+      break;
+    }
+    if(str[i]===str[j]){
+      count+=1;
+    }
+  }
+  if(count>1){
+    ans+=str[i]+count;
+  }
+}
+return ans;
+};
+ 
+ 
+    </pre>
+        <h1>Count the vowels</h1>
+    <pre>var Count_Vowels= (S) => 
+        {
+          let result=0;
+          for(let i=0;i < S.length;i++){
+            if(S[i] === "a"||S[i]==="e"||S[i]==="i"||S[i]==="o"||S[i]==="u"||S[i]==="A"||S[i]==="E"||S[i]==="I"||S[i]==="O"||S[i]==="U"){
+             result+=1;
+            }
+          }
+          return result;
+        };</pre>
+        <h1>Concatenate the string</h1>
+    <pre>
+      
+var Concatenate_Strings = (S1, S2) => 
+{
+    return S1+S2;  
+};
+ 
+ </pre>
+        <h1>Find length</h1>
+    <pre>
+      
+const findLength = (S) => 
+{
+  let result=0;
+  let i=0;
+  for(let i=0;S[i] < 100;i++){
+    if(S[i]!==undefined){
+    result++;
+    }
+  } 
+  console.log(result);
+};
+ 
+
+    </pre>
+        <h1>Find the winner</h1>
+    <pre>
+       
+var Game_Winner = (S) => 
+{
+  let result1=0;
+  let result2=0;
+  let finalresult="Draw";
+  for(let i=0;i < S.length;i++){
+    if(S[i]==="A"){
+      result1++;
+    }
+    else if(S[i]==="D"){
+      result2++;
+    }
+  }
+  if(result1>result2){
+    finalresult="Aditya"
+  }
+}
+ 
+
+    </pre>
+        <h1>Join string</h1>
+    <pre> 
+      const joinStrings = (S, P) => 
+      {
+        return S.concat(P);
+      };
+       
+      </pre>
+        <h1>Palindrome check</h1>
+    <pre>
+       
+var Palin_Check = (str) =>
+{
+  let answer;
+	 for(let i=0;i < str.length;i++){
+	   for(let j=str.length;j >= 0;j--)
+	   {
+	     if(str[i]===str[j]){
+	       answer="TRUE"
+	     }
+	     else{
+	       answer="FALSE"
+	     }
+	   }
+	 }
+	 return answer;
+}
+
+
+    </pre>
+        <h1>Reverse the string</h1>
+    <pre>
+      
+var Reverse_String = (str) => 
+{
+  let result="";
+  for(let i=str.length-1;i >= 0;i--){
+    result+=str.charAt(i);
+  }
+  return result;
+};
+ 
+
+    </pre>
+        <h1>Match the strings</h1>
+    <pre>
+      var String_Match = (S1,S2) => 
+      {
+        if(S1===S2){
+          return "YES"
+        }    
+        else{
+          return "NO"
+        }
+      };
+       
+      </pre>
+        <h1>String Replace</h1>
+    <pre>
+      
+var Replace = (S, pattern , text) => 
+{
+     return S.replace(pattern,text); 
+};
+ 
+
+    </pre>
+        <h1>Split the string</h1>
+    <pre>
+      
+var Split_the_string = (S) =>
+{
+   let res=S.split(" ");
+   return res;
+   
+};
+    </pre>
+        <h1>Count the vowels and consonants</h1>
+    <pre>
+      
+var Count_Vowels= (S) => 
+{
+let ans=0;
+for(let i=0;i<S.length;i++){
+      if(S[i]==="a"||S[i]==="a"||S[i]==="a"||S[i]==="a"||S[i]==="a"){
+        ans++;
+      }
+}
+return ans;
+};
+var Count_Consonants= (S) => 
+{
+       let ans=0;
+for(let i=0;i < S.length;i++){
+      if(S[i]==="a"||S[i]==="a"||S[i]==="a"||S[i]==="a"||S[i]==="a"){
+        ans++;
+      }
+}
+return S.length-ans;
+};
+ 
+
+    </pre>
+    <h1>Count character</h1>
+    <pre></pre>
+</body>
+</html>
